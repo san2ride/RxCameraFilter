@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VFP-Tb-0gz">
-                                <rect key="frame" x="0.0" y="64" width="375" height="500.5"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="501"/>
                             </imageView>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8C-sp-FMG">
                                 <rect key="frame" x="131" y="600" width="112" height="30"/>
@@ -31,14 +31,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="VFP-Tb-0gz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JXR-i5-BK8"/>
-                            <constraint firstItem="VFP-Tb-0gz" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="SRc-Yq-hnA"/>
-                            <constraint firstItem="Q8C-sp-FMG" firstAttribute="centerX" secondItem="VFP-Tb-0gz" secondAttribute="centerX" id="T5g-Vx-XPd"/>
-                            <constraint firstItem="Q8C-sp-FMG" firstAttribute="top" secondItem="VFP-Tb-0gz" secondAttribute="bottom" constant="27" id="WSc-JT-cUz"/>
-                            <constraint firstItem="Q8C-sp-FMG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="131" id="X9e-lm-m2z"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Q8C-sp-FMG" secondAttribute="bottom" constant="37" id="boX-u1-Vjb"/>
-                            <constraint firstItem="VFP-Tb-0gz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dbl-Vq-NEz"/>
-                            <constraint firstItem="VFP-Tb-0gz" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.75" id="fnw-yk-u2l"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Q8C-sp-FMG" secondAttribute="bottom" constant="37" id="HL7-MY-bdx"/>
+                            <constraint firstItem="VFP-Tb-0gz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NOm-dx-Uxr"/>
+                            <constraint firstItem="VFP-Tb-0gz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Q9u-9Y-tus"/>
+                            <constraint firstAttribute="trailing" secondItem="VFP-Tb-0gz" secondAttribute="trailing" id="XjM-2t-RBX"/>
+                            <constraint firstItem="Q8C-sp-FMG" firstAttribute="top" secondItem="VFP-Tb-0gz" secondAttribute="bottom" constant="35" id="dVU-a0-SH5"/>
+                            <constraint firstItem="Q8C-sp-FMG" firstAttribute="centerX" secondItem="VFP-Tb-0gz" secondAttribute="centerX" id="eEf-VL-LdO"/>
+                            <constraint firstItem="Q8C-sp-FMG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="131" id="mU8-7k-BEV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -63,19 +62,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="I1I-WR-IX7">
-                            <size key="itemSize" width="50" height="50"/>
+                            <size key="itemSize" width="100" height="100"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="oou-ah-Wzs">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="oou-ah-Wzs" customClass="PhotoViewCell" customModule="RxCamera" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ziE-eH-iaO">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        </imageView>
+                                    </subviews>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="ziE-eH-iaO" firstAttribute="top" secondItem="oou-ah-Wzs" secondAttribute="top" id="867-6f-XDN"/>
+                                    <constraint firstItem="ziE-eH-iaO" firstAttribute="height" secondItem="oou-ah-Wzs" secondAttribute="height" id="grJ-Ea-ALt"/>
+                                    <constraint firstItem="ziE-eH-iaO" firstAttribute="leading" secondItem="oou-ah-Wzs" secondAttribute="leading" id="xXt-rl-OiH"/>
+                                    <constraint firstItem="ziE-eH-iaO" firstAttribute="width" secondItem="oou-ah-Wzs" secondAttribute="width" id="xh0-Uw-TYK"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="photoImage" destination="ziE-eH-iaO" id="fpG-SB-Jt6"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -87,7 +100,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2sS-0f-h7p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2926" y="100"/>
+            <point key="canvasLocation" x="2925.5999999999999" y="99.400299850074973"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Iss-Po-4q7">

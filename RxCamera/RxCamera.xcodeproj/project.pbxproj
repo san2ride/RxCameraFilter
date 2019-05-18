@@ -14,6 +14,7 @@
 		AD13E29E228FB43B00B13F8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD13E29C228FB43B00B13F8F /* LaunchScreen.storyboard */; };
 		AD13E2A8228FB5A800B13F8F /* CameraFilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD13E2A7228FB5A800B13F8F /* CameraFilterController.swift */; };
 		AD13E2AA228FB60300B13F8F /* PhotosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD13E2A9228FB60300B13F8F /* PhotosController.swift */; };
+		ADB7DE1A228FCCF2002853C5 /* PhotoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB7DE19228FCCF2002853C5 /* PhotoViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		AD13E29F228FB43B00B13F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD13E2A7228FB5A800B13F8F /* CameraFilterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFilterController.swift; sourceTree = "<group>"; };
 		AD13E2A9228FB60300B13F8F /* PhotosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosController.swift; sourceTree = "<group>"; };
+		ADB7DE19228FCCF2002853C5 /* PhotoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				AD13E293228FB42F00B13F8F /* AppDelegate.swift */,
-				AD13E2A7228FB5A800B13F8F /* CameraFilterController.swift */,
-				AD13E2A9228FB60300B13F8F /* PhotosController.swift */,
+				ADB7DE1B228FCD00002853C5 /* mvc */,
 				AD13E2A6228FB49700B13F8F /* Storyboard */,
 				AD13E2A5228FB47E00B13F8F /* Supporting Files */,
 			);
@@ -105,6 +106,32 @@
 				AD13E29C228FB43B00B13F8F /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		ADB7DE1B228FCD00002853C5 /* mvc */ = {
+			isa = PBXGroup;
+			children = (
+				ADB7DE1C228FCD14002853C5 /* controller */,
+				ADB7DE1D228FCD24002853C5 /* view */,
+			);
+			path = mvc;
+			sourceTree = "<group>";
+		};
+		ADB7DE1C228FCD14002853C5 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				AD13E2A7228FB5A800B13F8F /* CameraFilterController.swift */,
+				AD13E2A9228FB60300B13F8F /* PhotosController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		ADB7DE1D228FCD24002853C5 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				ADB7DE19228FCCF2002853C5 /* PhotoViewCell.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +251,7 @@
 				AD13E2AA228FB60300B13F8F /* PhotosController.swift in Sources */,
 				AD13E2A8228FB5A800B13F8F /* CameraFilterController.swift in Sources */,
 				AD13E294228FB42F00B13F8F /* AppDelegate.swift in Sources */,
+				ADB7DE1A228FCCF2002853C5 /* PhotoViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
