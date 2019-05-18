@@ -14,6 +14,7 @@
 		AD13E29E228FB43B00B13F8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD13E29C228FB43B00B13F8F /* LaunchScreen.storyboard */; };
 		AD13E2A8228FB5A800B13F8F /* CameraFilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD13E2A7228FB5A800B13F8F /* CameraFilterController.swift */; };
 		AD13E2AA228FB60300B13F8F /* PhotosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD13E2A9228FB60300B13F8F /* PhotosController.swift */; };
+		ADADE4F1229064D600F056EF /* FilterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADADE4F0229064D600F056EF /* FilterService.swift */; };
 		ADB7DE1A228FCCF2002853C5 /* PhotoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB7DE19228FCCF2002853C5 /* PhotoViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		AD13E29F228FB43B00B13F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD13E2A7228FB5A800B13F8F /* CameraFilterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFilterController.swift; sourceTree = "<group>"; };
 		AD13E2A9228FB60300B13F8F /* PhotosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosController.swift; sourceTree = "<group>"; };
+		ADADE4F0229064D600F056EF /* FilterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterService.swift; sourceTree = "<group>"; };
 		ADB7DE19228FCCF2002853C5 /* PhotoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +88,7 @@
 				ADB7DE1B228FCD00002853C5 /* mvc */,
 				AD13E2A6228FB49700B13F8F /* Storyboard */,
 				AD13E2A5228FB47E00B13F8F /* Supporting Files */,
+				ADADE4F0229064D600F056EF /* FilterService.swift */,
 			);
 			path = RxCamera;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD13E2AA228FB60300B13F8F /* PhotosController.swift in Sources */,
+				ADADE4F1229064D600F056EF /* FilterService.swift in Sources */,
 				AD13E2A8228FB5A800B13F8F /* CameraFilterController.swift in Sources */,
 				AD13E294228FB42F00B13F8F /* AppDelegate.swift in Sources */,
 				ADB7DE1A228FCCF2002853C5 /* PhotoViewCell.swift in Sources */,

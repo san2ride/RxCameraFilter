@@ -11,6 +11,7 @@ import RxSwift
 
 class CameraFilterController: UIViewController {
 
+    @IBOutlet weak var applyFilterButton: UIButton!
     @IBOutlet weak var photoImageView: UIImageView!
     
     let bag = DisposeBag()
@@ -29,7 +30,37 @@ class CameraFilterController: UIViewController {
         
         photoCVC.selectedPhoto.subscribe(onNext: { [weak self] photo in
             
+            DispatchQueue.main.async {
+                self?.updateUI(with: photo)
+            }
             self?.photoImageView.image = photo
         }).disposed(by: bag)
+    }
+    
+    @IBAction func applyFilterButtonPressed() {
+        
+        guard let sourceImage = self.photoImageView.image else {
+            return
+        }
+        
+        FilterService().applyFilter(to: sourceImage)
+            .subscribe(onNext: { filteredImage in
+                
+                DispatchQueue.main.async {
+                    self.photoImageView.image = filteredImage
+                }
+            }).disposed(by: bag)
+        
+//        FilterService().applyFilter(to: sourceImage) { filteredImage in
+//
+//            DispatchQueue.main.async {
+//                self.photoImageView.image = filteredImage
+//            }
+//        }
+    }
+    
+    private func updateUI(with image: UIImage) {
+        self.photoImageView.image = image
+        self.applyFilterButton.isHidden = false 
     }
 }
